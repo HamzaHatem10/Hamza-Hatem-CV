@@ -113,14 +113,23 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
-    transition: transform 0.3s ease;
-    min-height: 44px; /* Better touch target */
-    padding: 4px 8px;
-    border-radius: 6px;
+    transition: all 0.3s ease;
+    min-height: 44px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
 }
 
 .contact-item:hover {
     transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.contact-item:active {
+    transform: translateY(0);
 }
 
 .main-content {
@@ -178,13 +187,13 @@ body {
 .skill-tag {
     background: linear-gradient(135deg, #667eea, #764ba2);
     color: white;
-    padding: 10px 16px; /* Increased padding for better touch targets */
+    padding: 10px 16px;
     border-radius: 20px;
-    font-size: 0.9rem; /* Slightly larger font */
+    font-size: 0.9rem;
     font-weight: 500;
     transition: all 0.3s ease;
     cursor: pointer;
-    min-height: 44px; /* Better touch target */
+    min-height: 44px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -243,7 +252,7 @@ body {
 .project-link {
     background: #667eea;
     color: white;
-    padding: 8px 16px; /* Better touch targets */
+    padding: 8px 16px;
     border-radius: 15px;
     text-decoration: none;
     font-size: 0.85rem;
@@ -258,7 +267,6 @@ body {
     transform: translateY(-1px);
 }
 
-/* Languages & Interests Section Styles */
 .language-proficiency {
     display: flex;
     justify-content: space-between;
@@ -269,7 +277,7 @@ body {
 
 .proficiency-bar {
     width: 100px;
-    height: 8px; /* Slightly larger for better visibility */
+    height: 8px;
     background: #e1e5e9;
     border-radius: 4px;
     overflow: hidden;
@@ -290,7 +298,7 @@ body {
 
 .interest-item {
     background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
-    padding: 18px 15px; /* Better touch targets */
+    padding: 18px 15px;
     border-radius: 10px;
     text-align: center;
     transition: transform 0.3s ease;
@@ -306,7 +314,7 @@ body {
 }
 
 .interest-icon {
-    font-size: 1.8rem; /* Slightly larger */
+    font-size: 1.8rem;
     margin-bottom: 8px;
 }
 
@@ -349,14 +357,14 @@ body {
     background: linear-gradient(135deg, #667eea, #764ba2);
     color: white;
     border: none;
-    padding: 18px 24px; /* Better touch targets */
+    padding: 18px 24px;
     border-radius: 50px;
     font-weight: 600;
     cursor: pointer;
     box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
     transition: all 0.3s ease;
     z-index: 1000;
-    min-height: 56px; /* Better touch target */
+    min-height: 56px;
     font-size: 1rem;
 }
 
@@ -365,7 +373,6 @@ body {
     box-shadow: 0 15px 35px rgba(102, 126, 234, 0.4);
 }
 
-/* Tablet breakpoint */
 @media (max-width: 1024px) {
     .main-content {
         grid-template-columns: 1fr;
@@ -387,7 +394,6 @@ body {
     }
 }
 
-/* Mobile breakpoint */
 @media (max-width: 768px) {
     .container {
         padding: 15px;
@@ -503,7 +509,6 @@ body {
     }
 }
 
-/* Small mobile breakpoint */
 @media (max-width: 480px) {
     .container {
         padding: 10px;
@@ -551,7 +556,6 @@ body {
         font-size: 0.85rem;
     }
     
-    /* Reduce floating elements on very small screens for performance */
     .floating-element {
         width: 40px;
         height: 40px;
